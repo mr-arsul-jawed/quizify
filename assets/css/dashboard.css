@@ -2,12 +2,13 @@
         .container {
             display: flex;
             flex-direction: column;
-            padding: 20px;
             width: 90%;
             max-width: 1200px;
-            margin: 0px auto;
+            margin: 10px auto;
             padding: 30px;
-            background: linear-gradient(135deg, #393941a5, #d7d7df);
+            border: 1px solid #ccc; 
+            /* background: linear-gradient(135deg, #393941a5, #d7d7df); */
+            background-color: #fff;
           
 
             /* background-color: #ccc; */
@@ -22,12 +23,14 @@
         }
         header h2 {
 
-            font-size: 2.5rem;
+            font-size: 2rem;
             color:#13005A;;
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: bold;
         }
+
+  
         
 
         .main-layout {
@@ -124,7 +127,8 @@
     display: block;
     margin-bottom: 5px;
     font-size: 1.1rem;
-    color: #ddd;
+    /* color: #ddd; */
+    color: #13005A;
     font-weight: 600;
 }
 
@@ -155,7 +159,8 @@
 
 #filterForm label {
     font-size: 1.1rem;
-    color: #ddd;
+    /* color: #ddd; */
+    color: #13005A;
     font-weight: 600;
 }
 

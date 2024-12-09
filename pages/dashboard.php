@@ -20,14 +20,14 @@
                 <!-- Course and Year Selection -->
                 <div class="filter-section">
                     <div>
-                        <label for="course">Select Course:</label>
+                        <label id="select" for="course">Select Course:</label>
                         <select id="course" name="course">
                             <!-- Dynamic course options will be added here -->
                         </select>
                     </div>
 
                     <div>
-                        <label for="year">Select Year:</label>
+                        <label id="select" for="year">Select Year:</label>
                         <select id="year" name="year">
                             <!-- Dynamic year options will be added here -->
                         </select>
@@ -36,12 +36,12 @@
 
                 <!-- Question Filters -->
                 <form id="filterForm">
-                    <label for="marks">Marks:</label>
+                    <label id="select" for="marks">Marks:</label>
                     <select id="marks" name="marks">
                         <!-- dynamically generated options -->
                     </select>
 
-                    <label for="level">Level:</label>
+                    <label id="select" for="level">Level:</label>
                     <select id="level" name="level">
                         <option value="">Select Level</option>
                         <option value="L1">L1</option>
@@ -51,7 +51,7 @@
                         <option value="L5">L5</option>
                     </select>
 
-                    <label for="outcome">Outcome:</label>
+                    <label id="select" for="outcome">Outcome:</label>
                     <select id="outcome" name="outcome">
                         <!-- dynamically generated options -->
                     </select>
