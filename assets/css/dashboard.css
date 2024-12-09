@@ -1,117 +1,117 @@
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            max-width: 1200px;
-            margin: 10px auto;
-            padding: 30px;
-            border: 1px solid #ccc; 
-            /* background: linear-gradient(135deg, #393941a5, #d7d7df); */
-            background-color: #fff;
-          
-
-            /* background-color: #ccc; */
-            border-radius: 12px;
-
-        }
-     
-        header {
-            /* color: #13005A; */
-            text-align: center;
-            /* margin-bottom: 20px; */
-        }
-        header h2 {
-
-            font-size: 2rem;
-            color:#13005A;;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: bold;
-        }
-
-  
-        
-
-        .main-layout {
-            display: flex;
-            gap: 20px;
-        }
-
-        .left-section {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            /* background-color: #f9f9f9; */
-        }
-
-        .right-section {
-            flex: 2;
-            color: #a49ebb;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            /* background-color: #f4f4f4; */
-        }
-
-        .filter-section {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .filter-section div {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        form label {
-            font-weight: bold;
-        }
-
-        form select, button {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .question-list {
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 30px;
+    border: 1px solid #ccc; 
+    /* background: linear-gradient(135deg, #393941a5, #d7d7df); */
+    background-color: #fff;
             
-            margin-top: 20px;
-        }
-          
-        #qs{
-            color: #13005A;
-        }
-        .question-list h3 {
-            
-            margin-bottom: 10px;
-        }
 
-        .question-list ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    /* background-color: #ccc; */
+    border-radius: 12px;
 
-        .question-list ul li {
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-bottom: 5px;
-        }
+}
+
+header {
+  /* color: #13005A; */
+  text-align: center;
+  /* margin-bottom: 20px; */
+}           
+           
+header h2 {
+
+    font-size: 2rem;
+    color:#13005A;;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
     
-        /* Filter Section */
+            
+
+.main-layout {           
+    display: flex;           
+    gap: 20px;            
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* background-color: #f9f9f9; */
+}          
+
+.right-section {
+    flex: 2;
+    color: #a49ebb;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* background-color: #f4f4f4; */
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}           
+
+.filter-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}           
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}          
+
+form select, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.question-list {
+    
+    margin-top: 20px;
+}
+
+#qs{
+    color: #13005A;
+}
+.question-list h3 {
+    
+    margin-bottom: 10px;
+}           
+
+.question-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.question-list ul li {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}           
+    
+/* Filter Section */
 .filter-section {
     display: flex;
     justify-content: space-between;
