@@ -56,6 +56,7 @@ header h2 {
     border: 1px solid #ccc;
     border-radius: 8px;
     /* background-color: #f4f4f4; */
+    /* background: linear-gradient(to right, #e4edef, #eae4e4); */
 }
 
 .filter-section {
@@ -135,9 +136,10 @@ form select, button {
 .filter-section select {
     width: 100%;
     padding: 12px;
-    background-color: #444;
+    /* background-color: #444; */
+    background: linear-gradient(to right, #e4edef, #eae4e4);
     border: 1px solid #555;
-    color: #fff;
+    color: black;
     border-radius: 6px;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -167,16 +169,20 @@ form select, button {
 #filterForm select {
     width: 150px;
     padding: 12px;
-    background-color: #444;
+    /* background-color: #444; */
+    background: linear-gradient(to right, #e4edef, #eae4e4);
+   
+
     border: 1px solid #555;
-    color: #fff;
+    color: black;
     border-radius: 6px;
     font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 #filterForm button {
-    background-color: #ff5722;
+    /* background-color: #ff5722; */
+    background: linear-gradient(45deg, #026c93, #0c506a);
     color: #fff;
     padding: 12px 25px;
     border: none;

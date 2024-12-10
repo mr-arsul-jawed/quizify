@@ -10,7 +10,7 @@
     <div class="container">
         <!-- Dashboard Header -->
         <header>
-            <h2>Dashboard - Question Management</h2>
+            <h2>Report - Management</h2>
         </header>
 
         <!-- Main Layout -->

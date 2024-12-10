@@ -43,7 +43,9 @@
   color: white;
   font-size: 1.1rem;
   padding: 12px 25px;
-  background-color: #388E3C; /* Button background color */
+  /* background-color: #388E3C; */
+  background: linear-gradient(45deg, #abd3e2, #0c506a);
+
   border-radius: 5px;
   transition: all 0.3s ease;
 }
