@@ -22,13 +22,14 @@ function loadCourses() {
             const courses = document.querySelector('#course');
             courses.innerHTML = '<option value="">Select Course</option>';
 
-            if (data.data.courses.length === 0) {
+            if (!data.data.courses.length) {
                 courses.innerHTML = '<option>No courses available</option>';
             } else {
                 data.data.courses.forEach(course => {
                     const option = document.createElement('option');
                     option.value = course.course_code; // Using course_code
-                    option.innerHTML = course.course_code;
+                    // option.innerHTML = course.course_code;
+                    option.innerHTML = course.course_name;
                     courses.appendChild(option);
                 });``
 
@@ -61,7 +62,7 @@ function loadOutcomes(courseCode, selectedOutcomeId = null) {
             outcomes.innerHTML = '<option value="">Select Outcome</option>';
             editOutcome.innerHTML = '<option value="">Select Outcome</option>';
 
-            if (data.data.outcomes.length === 0) {
+            if (!data.data.outcomes.length) {
                 outcomes.innerHTML = '<option>No outcomes available</option>';
                 editOutcome.innerHTML = '<option>No outcomes available</option>';
             } else {
@@ -152,6 +153,7 @@ document.getElementById('questionForm').addEventListener('submit', function (eve
     const questionText = document.getElementById('questionText').value.trim();
     const marks = parseInt(document.getElementById('marks').value, 10);
     const level = document.getElementById('level').value;
+    
 
     if (!questionText || isNaN(marks)) {
         alert('Question text and marks are required.');
@@ -194,14 +196,14 @@ function loadQuestions(courseCode) {
             const questionsList = document.querySelector('#questions-list');
             questionsList.innerHTML = '';
 
-            if (data.data.questions.length === 0) {
+            if (!data.data.questions.length) {
                 questionsList.innerHTML = '<li>No questions available</li>';
             } else {
                 data.data.questions.forEach((question, index) => {
                     const li = document.createElement('li');
                     li.innerHTML = `
                         <strong>QS${index + 1}:${question.question_text}</strong> 
-                        (Marks: ${question.marks}, Level: ${question.level}, OC: ${question.outcome_id})
+                        (Marks: ${question.marks}, Level: ${question.level}, OC: OC${index + 1})
                         <br>OC${index + 1}: ${question.outcome_text}
                         <button class="edit" 
                             onclick="editQuestion(${question.id}, '${question.question_text.replace(/'/g, "\\'")}', ${question.marks}, '${question.level}', '${question.outcome_id}')">
