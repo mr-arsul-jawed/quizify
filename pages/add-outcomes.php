@@ -30,7 +30,7 @@
         </form>
     </div>
 
-    <div class="right-section" id="outcomes-list">
+    <div class="right-section">
 
         <!-- Outcomes List -->
         <div>
@@ -49,13 +49,13 @@
                 <form id="editOutcomeForm">
                     <label for="editOutcomeText">Outcome Text</label>
                     <textarea id="editOutcomeText" rows="4" required></textarea>
-                    <input type="hidden" id="editOutcomeId" />
+                    <input type="hidden" id="editOutcomeId" /> <br></br>
+                    <small >Provide the full text. Use back tick, Don't use single or double quotes.</small> </br>
                     <button type="submit">Save Changes</button>
                 </form>
             </div>
         </div>
 
-    </div>
     </div>
     <script src="assets/js/outcomes.js"></script>
 </body>

@@ -60,7 +60,7 @@ function loadOutcomes(courseCode) {
             } else {
                 data.data.outcomes.forEach((outcome, index) => {
                     const li = document.createElement('li');
-                    li.innerHTML = `OC${index + 1}. ${outcome.outcome_text} 
+                    li.innerHTML = `CO${index + 1}. ${outcome.outcome_text} 
                         <button class="edit" onclick="editOutcome(${outcome.id}, '${outcome.outcome_text.replace(/'/g, "\\'")}')">Edit</button>
                         <button class="delete" onclick="deleteOutcome(${outcome.id})">Delete</button>`;
                     // li.innerHTML = `${outcome.outcome_text} 

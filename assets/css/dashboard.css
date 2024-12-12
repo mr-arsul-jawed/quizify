@@ -51,7 +51,7 @@ header h2 {
 
 .right-section {
     flex: 2;
-    color: #a49ebb;
+    color: #6f6e74;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -92,9 +92,6 @@ form select, button {
     margin-top: 20px;
 }
 
-#qs{
-    color: #13005A;
-}
 .question-list h3 {
     
     margin-bottom: 10px;
@@ -103,13 +100,16 @@ form select, button {
 .question-list ul {
     list-style-type: none;
     padding: 0;
+    
 }
 
 .question-list ul li {
+    color: #6f6e74;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 5px;
+    background: linear-gradient(to right, #e4edef, #eae4e4);
 }           
     
 /* Filter Section */
@@ -200,6 +200,24 @@ form select, button {
 /* Question List */
 .question-list {
     margin-top: 40px;
+
+}
+
+#filteredQuestions{
+    background: linear-gradient(to right, #e4edef, #eae4e4); 
+}
+
+
+
+
+#qs{
+    color: #13005A;
+
+    
+}
+
+#report{
+    background: linear-gradient(to right, #e4edef, #eae4e4);
 }
 
 .question-list h3 {
@@ -214,6 +232,7 @@ form select, button {
 #report {
     list-style: none;
     padding: 0;
+    color: #13005A;
     background-color: #333;
     border-radius: 8px;
     padding: 20px;
@@ -226,7 +245,7 @@ form select, button {
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
-    color: #ddd;
+    color: #201c1c;
     font-size: 1.1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -236,6 +255,16 @@ form select, button {
     background-color: #555;
     transform: translateX(5px);
 }
+
+#filteredQuestions li{
+    color: #201c1c;
+
+}
+
+/* #report li{
+    color: #6f6e74; 
+} */
+
 
 /* Add Hover Effect on List */
 #filteredQuestions li:hover,

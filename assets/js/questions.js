@@ -69,13 +69,13 @@ function loadOutcomes(courseCode, selectedOutcomeId = null) {
                 data.data.outcomes.forEach((outcome, index) => {
                     const option = document.createElement('option');
                     option.value = outcome.id;
-                    option.innerHTML = `OC${index + 1} : ${outcome.outcome_text}`;
+                    option.innerHTML = `CO${index + 1} `;
 
                     outcomes.appendChild(option);
 
                     const option1 = document.createElement('option');
                     option1.value = outcome.id;
-                    option1.innerHTML = `OC${index + 1} : ${outcome.outcome_text}`;
+                    option1.innerHTML = `CO${index + 1} `;
 
                     // Pre-select if this is the selected outcome for editing
                     if (selectedOutcomeId && outcome.id == selectedOutcomeId) {
@@ -203,8 +203,7 @@ function loadQuestions(courseCode) {
                     const li = document.createElement('li');
                     li.innerHTML = `
                         <strong>QS${index + 1}:${question.question_text}</strong> 
-                        (Marks: ${question.marks}, Level: ${question.level}, OC: OC${index + 1})
-                        <br>OC${index + 1}: ${question.outcome_text}
+                        (Marks: ${question.marks}, Level: ${question.level}, CO: CO${index + 1})
                         <button class="edit" 
                             onclick="editQuestion(${question.id}, '${question.question_text.replace(/'/g, "\\'")}', ${question.marks}, '${question.level}', '${question.outcome_id}')">
                             Edit

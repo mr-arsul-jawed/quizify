@@ -145,10 +145,10 @@ function fetchOutcomes(courseCode) {
             const outcomeDropdown = document.getElementById("outcome");
             outcomeDropdown.innerHTML = '<option value="">Select Outcome</option>';
 
-            data.data.outcomes.forEach(outcome => {
+            data.data.outcomes.forEach((outcome, index) => {
                 const option = document.createElement("option");
                 option.value = outcome.id;
-                option.textContent = outcome.outcome_text;
+                option.textContent = 'CO' + (index + 1);
                 outcomeDropdown.appendChild(option);
             });
         })

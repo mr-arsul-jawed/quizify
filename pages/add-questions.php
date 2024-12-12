@@ -42,7 +42,7 @@
             <select id="outcome" name="outcome" aria-label="Link to an outcome">
                 <!-- Options of outcomes will be displayed here dynamically -->
             </select>
-
+            
             <button type="submit" aria-label="Submit new question">Submit</button>
         </form>
         </div>  
@@ -85,6 +85,7 @@
                     </select>
 
                     <input type="hidden" id="editQuestionId" />
+                    <small >Provide the full text. Use back tick, Don't use single or double quotes.</small> <br></br>
                     <button type="submit">Save Changes</button>
                 </form>
             </div>

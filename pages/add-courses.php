@@ -51,27 +51,30 @@
         </table>
     </div>
 
-    <!-- Edit Course Modal -->
-    <div id="edit-modal" class="modal">
-        <span class="close" onclick="closeEditModal()">&times;</span>
-        <h2>Edit Course</h2>
-        <form id="edit-form">
-            <label for="edit_course_name">Course Name:</label>
-            <input type="text" id="edit_course_name" name="course_name" required>
-            
-            <label for="edit_course_code">Course Code:</label>
-            <input type="text" id="edit_course_code" name="course_code" required pattern="[A-Z]{3}\d{3}">
-            
-            <label for="edit_credits">Credits:</label>
-            <input type="number" id="edit_credits" name="credits" required min="1">
-
-            <!-- <input type="date" id="edit_start_date" name="edit_start_date" required /> -->
-            
-            <input type="hidden" id="edit_course_id" name="id">
-            
-            <button type="submit">Save Changes</button>
-        </form>
+ 
     </div>
+       <!-- Edit Course Modal -->
+       <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>
+            <h2>Edit Course</h2>
+            <form id="edit-form">
+                <label for="edit_course_name">Course Name:</label>
+                <input type="text" id="edit_course_name" name="course_name" required>
+                
+                <label for="edit_course_code">Course Code:</label>
+                <input type="text" id="edit_course_code" name="course_code" required pattern="[A-Z]{3}\d{3}">
+                
+                <label for="edit_credits">Credits:</label>
+                <input type="number" id="edit_credits" name="credits" required min="1">
+
+                <!-- <input type="date" id="edit_start_date" name="edit_start_date" required /> -->
+                
+                <input type="hidden" id="edit_course_id" name="id">
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
     </div>
 
     <script src="assets/js/courses.js"></script>
